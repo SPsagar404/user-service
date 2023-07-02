@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name = "user-master")
+@Table(name = "USER_MASTER")
 @Data
 public class User {
 
@@ -27,11 +27,11 @@ public class User {
     @Column(name = "ABOUT")
     private String about;
 
-    @Column(name = "CREATEDDATE")
+    @Column(name = "CREATED_DATE",updatable = false)
     @CreationTimestamp
     private LocalDate createData;
 
-    @Column(name = "UPDATEDDATE")
+    @Column(name = "UPDATED_DATE",insertable = false)
     @UpdateTimestamp
     private LocalDate updateDate;
 
