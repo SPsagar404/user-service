@@ -13,4 +13,6 @@ public class Rating {
    private Integer rating;
 
    private String feedback;
+
+   private Hotel hotel;
 }
